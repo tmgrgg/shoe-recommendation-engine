@@ -69,7 +69,7 @@ ___
 
 # <b>Part 2: Generation</b>
 
-This extension to the recommendation system part of the project came about by asking the question: what if the perfect shoe that I'm looking for in this 'shoe space' did not exist? Since the recommendation system sees every shoe as just a point in 'shoe space', then could we work backwards and go from a point in 'shoe space' to a shoe that could actually exist there? This would be analogous to the process of creative design!
+This extension of the project came about by asking the question: what if the perfect shoe that I'm looking for in this 'shoe space' does not exist? Since the recommendation system sees every shoe as just a point in 'shoe space', then could we work backwards and go from a point in 'shoe space' to a shoe whose image would actually occupy this point? This would be analogous to the process of creative design!
 
 This part of the project is very much a WIP, as of yet primarily making use of unconditional generative models just to show that it is possible for a machine to generate new images of viable product designs, at least in theory.
 
