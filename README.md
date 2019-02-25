@@ -1,5 +1,5 @@
 
-<b> Note: in order to clone this repo and run the demo application for the recommendation system, you'll also need to download the [data folder](https://drive.google.com/open?id=1vKgJSd2IpW1zfDVQGK6_wW4WptFd3lr6) and store the contents as a sub-folder named 'data' in the a cloned local copy of this repository. I have included a gif and video link of usage of the demo app so that you avoid this if you're browsing.</b>
+<b> Note: in order to clone this repo and run the demo application for the recommendation system, you'll also need to download the [data folder](https://drive.google.com/open?id=1vKgJSd2IpW1zfDVQGK6_wW4WptFd3lr6) and store the contents as a sub-folder named 'data' in your cloned repository. I have included a gif and video link of usage of the demo app so that you avoid this if you're browsing.</b>
 
 ## Shoe Recommendation System and ShoeGAN
 
