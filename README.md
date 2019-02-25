@@ -6,7 +6,7 @@ ____
 
 [1 - RECOMMENDATION VISUALS](https://github.com/tmgrgg/shoe-recommendation-engine/#demo-application)
 
-[2 - GENERATION VISUALS (ShoeGAN)](https://github.com/tmgrgg/shoe-recommendation-engine/#shoegan-v03)
+[2 - GENERATION VISUALS (ShoeGAN)](https://github.com/tmgrgg/shoe-recommendation-engine/#shoegan-v03-machine-generated-designs)
 
 ___
 
