@@ -1,6 +1,3 @@
-
-<b> Note:</b> in order to run the demo application for the recommendation system, you'll also need to download the [data folder](https://drive.google.com/open?id=1vKgJSd2IpW1zfDVQGK6_wW4WptFd3lr6) and store the contents as a sub-folder named 'data' in your locally cloned repository. <b>I have included a gif and video link of usage of the demo app so that you can avoid this if you're browsing.</b>
-
 ## Shoe Recommendation System and ShoeGAN
 
 I have long been interested in using machine learning for the purposes of innovation and insight. One domain which I believe could be quite fruitful is in the commercial fashion industry - this project was inspired by the desire to explore this, as well as to demonstrate a level of ability in machine learning. 
@@ -32,7 +29,13 @@ Below is a gif displaying the simple app I built to demonstrate this image-based
 
 ![gif](media/demo.gif)
 
-The application can be run by cloning the repository and then running the following command in terminal within the cloned directory:
+Steps for running the application are as follows:
+
+1. Clone this repository.
+
+2. Download the files in [this drive folder](https://drive.google.com/open?id=1vKgJSd2IpW1zfDVQGK6_wW4WptFd3lr6), and place them all in a sub-folder named 'data' within the locally cloned repo.
+
+3. Run the following command in terminal within the cloned directory:
 
 ```
 python app.py
