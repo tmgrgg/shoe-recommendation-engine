@@ -6,7 +6,7 @@ In part 1, I discuss the implementation of an image-based shoe recommendation sy
 
 # <b>Part 1: Recommendation</b>
 
-The first part of the project stemmed from an exploration into the application of deep learning to e-commerce and recommendation systems, demonstrating an innovative approach to a business problem.
+The first part of the project stemmed from an exploration into the application of deep learning in e-commerce and recommendation systems, demonstrating an innovative approach to a business problem.
 
 ## The Problem
 
@@ -35,13 +35,9 @@ Steps for running the application are as follows:
 
 2. Download the files in [this drive folder](https://drive.google.com/open?id=1vKgJSd2IpW1zfDVQGK6_wW4WptFd3lr6), and place them all in a sub-folder named 'data' within the locally cloned repo.
 
-3. Run the following command in terminal within the cloned directory:
+3. Run the following command in terminal within the cloned directory: `python app.py` or `python3 app.py` to be sure you're using Python 3.
 
-```
-python app.py
-```
-
-Warning: It may take a minute to boot up because of the necessary precomputations.
+<b>Warning:</b> The application may take a minute or so to boot up because of the necessary precomputations.
 
 ## How Does It Work?
 
@@ -74,7 +70,7 @@ ___
 
 This extension of the project came about by asking the question: what if the perfect shoe that I'm looking for in this 'shoe space' does not exist? Since the recommendation system sees every shoe as just a point in 'shoe space', then could we work backwards and go from a point in 'shoe space' to a shoe whose image would actually occupy this point? This would be analogous to the process of creative design!
 
-This part of the project is very much a WIP, as of yet primarily making use of unconditional generative models just to show that it is possible for a machine to generate new images of viable product designs, at least in theory.
+This part of the project is very much a WIP. As of yet I am primarily making use of unconditional generative models to show that it is possible for a machine to generate viable product designs, at least in theory.
 
 ## Approach
 
@@ -122,6 +118,6 @@ This version of ShoeGAN was trained on higher resolution greyscale images and us
 
 ___
 
-## Future
+## Future Work
 
 I am currently working on stabilising the most recent version of ShoeGAN so that it is able to learn to generate realistic images of new shoe designs. Stay tuned!
