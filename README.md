@@ -1,8 +1,22 @@
-## Shoe Recommendation System and ShoeGAN
+# Shoe Recommendation System and ShoeGAN
+
+____
+
+### No Time, SHOW ME PICTURES:
+
+[1: RECOMMENDATION VISUALS](https://github.com/tmgrgg/shoe-recommendation-engine/#demo-application)
+
+[2: GENERATION VISUALS](https://github.com/tmgrgg/shoe-recommendation-engine/#shoegan-v03)
+
+___
+
+## Motivation
 
 I have long been interested in using machine learning for the purposes of innovation and insight. One domain which I believe could be quite fruitful is in the commercial fashion industry - this project was inspired by the desire to explore this, as well as to demonstrate a level of ability in machine learning. 
 
 In part 1, I discuss the implementation of an image-based shoe recommendation system. In part 2, I experiment with using deep learning for the more complex task of product design/generation.
+
+___
 
 # <b>Part 1: Recommendation</b>
 
