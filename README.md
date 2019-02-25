@@ -1,4 +1,6 @@
 
+<b> Note:</b> in order to run the demo application for the recommendation system, you'll also need to download the [data folder](https://drive.google.com/open?id=1vKgJSd2IpW1zfDVQGK6_wW4WptFd3lr6) and store the contents as a sub-folder named 'data' in your locally cloned repository. <b>I have included a gif and video link of usage of the demo app so that you can avoid this if you're browsing.</b>
+
 ## Shoe Recommendation System and ShoeGAN
 
 This project is an exploration into the application of deep learning to e-commerce and recommendation systems, throughout presented as an innovative approach to a business problem. In part 1, I discuss the implementation of an image-based shoe recommendation system. In part 2, I demonstrate experimentation into using deep learning for more complex tasks, such as product design/generation.
