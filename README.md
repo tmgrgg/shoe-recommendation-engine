@@ -46,7 +46,7 @@ Each image can be represented as a point in feature space: for example, a roughl
 
 ### Problems
 
-If we do as stated above and choose to plot our images in the feature space corresponding to its pixel values there are two main problems:
+If we do as stated above and choose to plot our images in the feature space corresponding to their pixel values, then there are two main problems:
 
 1. The space is huge (90,000 dimensions) and therefore computationally expensive to work in.
 2. The images that are closest in this feature space will be overly sensitive to individual pixels and will not be representative of larger local or global similarities present in the image.
