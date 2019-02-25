@@ -4,7 +4,7 @@ ____
 
 ### No Time! SHOW ME PICTURES:
 
-[1 - RECOMMENDATION VISUALS](https://github.com/tmgrgg/shoe-recommendation-engine/#demo-application)
+[1 - RECOMMENDATION DEMO](https://github.com/tmgrgg/shoe-recommendation-engine/#demo-application)
 
 [2 - GENERATION VISUALS (ShoeGAN)](https://github.com/tmgrgg/shoe-recommendation-engine/#shoegan-v03-machine-generated-designs)
 
