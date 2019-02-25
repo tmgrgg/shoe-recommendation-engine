@@ -105,7 +105,7 @@ As can be seen in the images, they are reminiscent of low-resolution examples of
 This version of ShoeGAN was trained on higher resolution greyscale images and used a more powerful (and less stable) architecture, resulting in images that were less consistent but more detailed and interesting:
 
 ![png](media/0-03Quite.png)
-*Some details such as laces present here *
+*More realism with details such as laces and texture present here*
 
 ![png](media/0-03Boring.png)
 *A number of sneakers and a clear heel with insole (top right)*
