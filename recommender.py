@@ -23,9 +23,10 @@ class Recommender():
     
     #df should have columns vector and img_path, and should be indexed
     #by CID!
-    def __init__(self, df_feature, df_img_path, verbose=False, metric='squared_euclidean'):
+    def __init__(self, df_feature, df_meta, verbose=False, metric='squared_euclidean'):
         self.df_feature = df_feature
-        self.df_img_path = df_img_path
+        self.df_meta = df_meta
+        self.df_img_path = df_meta['img_path']
         self.verbose = verbose
         
         if metric == 'squared_euclidean':
@@ -54,10 +55,10 @@ class Recommender():
     
     
     #metric is a distance metric x, y -> R
-    def _get_closest_k(self, k, cid_tgt):
+    def _get_closest_k(self, k, cid_tgt, vectors):
         top_k = []
         count = 0
-        vectors = self.df_feature
+       # vectors = self.df_feature
         vector_tgt = vectors.loc[cid_tgt]
         for index, vector in vectors.iterrows():
             count += 1
@@ -70,28 +71,49 @@ class Recommender():
         
         return list(map(lambda x : x[1], top_k))
     
+    def get_img(self, cid):
+        img_paths = self.df_img_path
+        return Image.open(img_paths[cid])
     
-    #display recommendations
-    def display_recs(self, cid_tgt, cids):
-        img_paths = self.df_img_path
-        img_tgt = Image.open(img_paths[cid_tgt])
-        img_list = [img_tgt]
-        
-        for cid in cids:
-            img_list.append(Image.open(img_paths[cid]))
-            
-        for img in img_list:
-            display(img)
-            
-    def display_target(self, cid_tgt):
-        img_paths = self.df_img_path
-        img_tgt = Image.open(img_paths[cid_tgt])
-        display(img_tgt)
+    def display_shoe(self, cid):
+        display(self.get_img(cid))
             
     #recommend k similar shoes as cid
     def recommend_k(self, k, cid):
-        top_k = self._get_closest_k(k, cid)
-        self.display_recs(top_k[0], top_k[1:])
+        #Hack, since it will return top recommendation as the cid itself!
+        k += 1
+        
+        #filter on gender and shoe category before recommending
+        
+        df_meta_gender = self.df_meta[self.df_meta['Gender'] == self.df_meta.loc[cid]['Gender']]
+        df_meta_gender_cat = df_meta_gender[df_meta_gender['Category'] == df_meta_gender.loc[cid]['Category']]
+        
+        df_filtered = df_meta_gender_cat[df_meta_gender_cat['SubCategory'] == df_meta_gender_cat.loc[cid]['SubCategory']]
+
+        indices = df_filtered.index.values
+        
+        filtered = self.df_feature.loc[indices]
+        
+        top_k = self._get_closest_k(k, cid, filtered)
+        
+        return {'tgt': top_k[0], 'recommended': top_k[1:]}
+        
+    def display_k_recommendations(self, k, cid, display_target=True):
+        recommendations = self.recommend_k(k, cid)['recommended']
+                
+        if display_target:
+            print('target:')
+            self.display_shoe(cid)
+            print('')
+        
+        print('recommendations:')
+        for cid_rec in recommendations:
+            self.display_shoe(cid_rec)
+            
+            
+        
+            
+        
         
         
         
