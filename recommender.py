@@ -7,9 +7,13 @@ Created on Thu Jan 31 15:04:44 2019
 """
 import numpy as np
 import pandas as pd
-from PIL import Image
-from IPython.display import display 
 
+#used to access images in zip folder
+from zipfile import ZipFile
+from io import BytesIO
+
+from PIL import Image
+from IPython.display import display
 
 #metrics
 def squared_euclidean(x, y):
@@ -23,11 +27,13 @@ class Recommender():
     
     #df should have columns vector and img_path, and should be indexed
     #by CID!
-    def __init__(self, df_feature, df_meta, verbose=False, metric='squared_euclidean'):
+    def __init__(self, df_feature, df_meta, zip_path='data/images.zip', verbose=False, metric='squared_euclidean'):
         self.df_feature = df_feature
         self.df_meta = df_meta
         self.df_img_path = df_meta['img_path']
         self.verbose = verbose
+        
+        self.archive = ZipFile(zip_path, 'r')
         
         if metric == 'squared_euclidean':
             self.metric = squared_euclidean
@@ -72,8 +78,8 @@ class Recommender():
         return list(map(lambda x : x[1], top_k))
     
     def get_img(self, cid):
-        img_paths = self.df_img_path
-        return Image.open(img_paths[cid])
+        img_data = self.archive.read('images/' + self.df_img_path[cid])
+        return Image.open(BytesIO(img_data))
     
     def display_shoe(self, cid):
         display(self.get_img(cid))
