@@ -13,19 +13,18 @@ import mat4py
 
 class Munger():
     
-    def __init__(self, feature_vector_path='data/4096_vals.csv', dir_data='data/ut-zap50k-data/', dir_imgs='data/ut-zap50k-images/', 
-                 file_meta='meta-data.csv', file_img_paths='image-path.mat'):
-        self.dir_imgs = dir_imgs
+    def __init__(self, feature_vector_filename='4096_vals.csv', dir_data='data/', dir_imgs='ut-zap50k-images/', 
+                 file_meta='meta-data.csv', file_img_path_filename='image-path.mat'):
         self.dir_data = dir_data
-        self.file_meta = file_meta
-        self.file_img_paths=file_img_paths
-        
-        self.feature_vector_path=feature_vector_path
+        self.dir_imgs = dir_data + dir_imgs 
+        self.file_meta_path = dir_data + file_meta
+        self.img_paths_path= dir_data + file_img_path_filename
+        self.feature_vector_path=dir_data + feature_vector_filename
         
         
         
     def _build_meta_df(self):
-        df = pd.read_csv(self.dir_data + self.file_meta)
+        df = pd.read_csv(self.file_meta_path)
         df.index = df['CID']
         self.df = df
         
@@ -41,7 +40,7 @@ class Munger():
 
     
     def _append_img_paths(self):
-        img_paths = mat4py.loadmat(self.dir_data + self.file_img_paths)
+        img_paths = mat4py.loadmat(self.img_paths_path)
         img_paths = list(map(lambda x: self.dir_imgs + x[0], img_paths['imagepath']))
         self.df['img_path'] = img_paths
         self.df['img_path'] = self.df['img_path'].apply(self._adhoc_corrections)

@@ -21,7 +21,7 @@ class GUI:
         self.master = master
         master.title("shüSPACE")
         
-        self.background_image=ImageTk.PhotoImage(Image.open('shuspace.jpg'))
+        self.background_image=ImageTk.PhotoImage(Image.open('media/shuspace.jpg'))
         background_label = tk.Label(master, image=self.background_image)
         background_label.place(x=0, y=0, relwidth=1, relheight=1, bordermode='outside')
 
@@ -48,12 +48,9 @@ class GUI:
         #2   3  6  11
         #5   7  8  13
         #10 12 14  15
-        #for i in range(self.size):
-        #    for j in range(self.size):
-        #        self.sq_list[self.size*i + j]['button'].grid(row=i, column=j)
+
+        #etc.
         
-        
-        #DO SO: MAP
         r = 0
         alt = 0
         switch = True
@@ -76,22 +73,8 @@ class GUI:
                 alt = 0
                 switch = True
 
-
-        #self.image_list = list(map(self._get_img, self.shoes[:self.size]))
-
-        
-        
-        #self.greet_button = tk.Button(master, image=self.image_list[0], command=self.greet)
-        #self.greet_button.pack()
-
-        #self.close_button = tk.Button(master, text="Close", command=master.quit)
-        #self.close_button.pack()
-
-    #def greet(self):
-    #    print("Greetings!")
     
     def choose(self, i):
-        #button i selected
         sqs = self.sq_list
         chosen = sqs[i]
         
@@ -120,25 +103,7 @@ class GUI:
             cid_btn_dict = {'button': tk.Button(self.master, command=partial(self.choose, i))}
             self.sq_list.append(cid_btn_dict)
         self.randomize()
-        
-        #as a test update text of every other button except this one
-        #for j in range(len(sqs)):
-         #   if j != i:
-          #      print(j)
-                #buttons[j].config(text=str(int(button[j]['text']) + 1))
                 
-                
-                    
-    #def choose(self, i):
-        #button i selected
-     #   buttons = self.button_list
-        
-        #as a test update text of every other button except this one
-      #  for j in range(len(self.button_list)):
-        #    if j != i:
-       #         button = self.button_list[j]
-         #       button.config(text=str(int(button['text']) + 1))
-        
         
     def _update_sq(self, sq, cid):
         sq['cid'] = cid
@@ -149,23 +114,6 @@ class GUI:
     def _get_img(self, cid):
         return ImageTk.PhotoImage(self.recommender.get_img(cid))
 
-
-#mngr = Munger()
-#df_meta, df_features = mngr.munge()
-                
-#recommender = Recommender(df_features, df_meta)
-#shoes = df_meta['CID']
-
-#import tkinter as tk
-#from PIL import Image, ImageTk
-
-#root = tk.Tk()
-#
-#photo = ImageTk.PhotoImage(Image.open('boot.jpg'))
-#label = tk.Label(root, image=photo)
-#label.pack()
-
-#root.mainloop()
 
 
 root = tk.Tk()
