@@ -67,7 +67,7 @@ If we do as stated above and choose to plot our images in the feature space corr
 
 ### Transfer Learning
 
-What I instead chose to do was to take a deep network that had been pre-trained on a huge dataset of all sorts of objects and to use its final hidden layer as a feature vector. This is not the traditional use of transfer learning, instead the transferred network acts as an out-of-the-box local and global visual feature detector. The transferred network is able to detect all sorts of shapes, colours, patterns and textures and encode them into its output layer for use as a feature vector.
+What I instead chose to do was to take a powerful convolutional neural network that had been pre-trained on a huge dataset of all sorts of objects and to use its final hidden layer as a feature vector. This is not used for classification, as is the traditional use of so-called transfer learning, instead the transferred network acts as an out-of-the-box local and global visual feature detector. The transferred network is able to detect all sorts of shapes, colours, patterns and textures and encode them into its output layer for use as a feature vector.
 
 ![jpg](media/transfer.jpg)
 
