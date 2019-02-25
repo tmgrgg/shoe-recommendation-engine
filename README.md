@@ -3,11 +3,13 @@
 
 ## Shoe Recommendation System and ShoeGAN
 
-This project is an exploration into the application of deep learning to e-commerce and recommendation systems, throughout presented as an innovative approach to a business problem. In part 1, I discuss the implementation of an image-based shoe recommendation system. In part 2, I demonstrate experimentation into using deep learning for more complex tasks, such as product design/generation.
+I have long been interested in using machine learning for the purposes of innovation and insight. One domain which I believe could be quite fruitful is in the commercial fashion industry - this project was inspired by the desire to explore this, as well as to demonstrate a level of ability in machine learning. 
+
+In part 1, I discuss the implementation of an image-based shoe recommendation system. In part 2, I expirment with using deep learning for the more complex task of product design/generation.
 
 # <b>Part 1: Recommendation</b>
 
-This project is an exploration into the application of deep learning to e-commerce and recommendation systems, demonstrating an innovative approach to a business problem.
+The first part of the project stemmed from an exploration into the application of deep learning to e-commerce and recommendation systems, demonstrating an innovative approach to a business problem.
 
 ## The Problem
 
