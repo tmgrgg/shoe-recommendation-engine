@@ -63,7 +63,7 @@ The transfer network feature vector ended up having 4096 values, and so describe
 
 The primary issue with performing content-based filtering over collaborative filtering is that there is no past data to use to quantify the effectiveness of our recommendation model. We therefore have to resort to AB testing for content-based recommendation, though this is beyond the scope of what I tried to do in this project (primarily because I don't actually own an e-commerce business).
 
-A real business would most benefit from using these methods when starting out and transition to more traditional collaborative filtering models once they had acquired suitable amounts of data.
+A real business would most likely benefit from using these methods when starting out, before transitioning to more traditional collaborative filtering models once they have acquired suitable amounts of data.
 
 ___
 
