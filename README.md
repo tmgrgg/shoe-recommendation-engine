@@ -3,7 +3,7 @@
 
 This project is an exploration into the application of deep learning to e-commerce and recommendation systems, throughout presented as an innovative approach to a business problem. In part 1, I discuss the implementation of an image-based shoe recommendation system. In part 2, I demonstrate experimentation into using deep learning for more complex tasks, such as product design/generation.
 
-# <b>Part 1: Recommendation
+# <b>Part 1: Recommendation</b>
 
 This project is an exploration into the application of deep learning to e-commerce and recommendation systems, demonstrating an innovative approach to a business problem.
 
