@@ -21,7 +21,7 @@ class GUI:
         self.master = master
         master.title("shüSPACE")
         
-        self.background_image=ImageTk.PhotoImage(Image.open('shuespacebig.jpg'))
+        self.background_image=ImageTk.PhotoImage(Image.open('shuspace.jpg'))
         background_label = tk.Label(master, image=self.background_image)
         background_label.place(x=0, y=0, relwidth=1, relheight=1, bordermode='outside')
 
