@@ -86,16 +86,16 @@ You can run and train an iteration of ShoeGAN yourself using one of the clearly 
 The earliest version of my Generative Adversarial Network for images of shoes used a very simple architecture and was trained on low-resolution greyscale images, just as a quick proof of concept:
 
 ![png](media/0-01Boots.png)
-*<b>Boots</b> by ShoeGAN v0.01*
+*<b>Boots</b> by ShoeGAN v0.1*
 
 ![png](media/0-01Sneakers.png)
-*<b>Sneakers</b> by ShoeGAN v0.01*
+*<b>Sneakers</b> by ShoeGAN v0.1*
 
 ![png](media/0-01Shoes.png)
-*<b>Shoes</b> by ShoeGAN v0.01*
+*<b>Shoes</b> by ShoeGAN v0.1*
 
 ![png](media/0-01Heels.png)
-*<b>Heels</b> by ShoeGAN v0.01*
+*<b>Heels</b> by ShoeGAN v0.1*
 
 As can be seen in the images, they are reminiscent of low-resolution examples of each class of shoe, albeit with a lot of noise.
 
