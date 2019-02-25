@@ -94,7 +94,7 @@ I generated new shoe designs using a Generative Adversarial Network through exte
 
 You can run and train an iteration of ShoeGAN yourself using one of the clearly labelled `.ipynb` files in this repository, although be warned that it will be quite time consuming. I have included images of versions of ShoeGAN's output below for reference.
 
-### ShoeGAN v0.1
+### ShoeGAN v0.1 Machine Generated Designs
 
 The earliest version of my Generative Adversarial Network for images of shoes used a very simple architecture and was trained on low-resolution greyscale images, just as a quick proof of concept:
 
@@ -112,7 +112,7 @@ The earliest version of my Generative Adversarial Network for images of shoes us
 
 As can be seen in the images, they are reminiscent of low-resolution examples of each class of shoe, albeit with a lot of noise.
 
-### ShoeGAN v0.3
+### ShoeGAN v0.3 Machine Generated Designs
 
 
 This version of ShoeGAN was trained on higher resolution greyscale images and used a more powerful (and less stable) architecture, resulting in images that were less consistent but more detailed and interesting:
