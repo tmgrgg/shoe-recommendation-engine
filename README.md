@@ -2,7 +2,7 @@
 
 ____
 
-### No Time, SHOW ME PICTURES:
+### No Time! SHOW ME PICTURES:
 
 [1 - RECOMMENDATION VISUALS](https://github.com/tmgrgg/shoe-recommendation-engine/#demo-application)
 
